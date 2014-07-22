@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>TicTacToe</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script> <!--firebase database-->
+	<script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script> <!--this talks to firebase database-->
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animate.min.css">
+	<link rel="stylesheet" href="hover.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body x-ng-app="gameApp" x-ng-controller="tttController">
+	<h1>TIC // TAC // TOE</h1>
+	<div class = "wrapper">
+		<div id ="cellsContainer">
+			<div class="cells float-shadow" x-ng-class="{cells: true, clickChangeX: b == 'X',clickChangeO: b =='O'}" x-ng-class-click=" 'clickChange' " x-ng-repeat="b in game.board track by $index" x-ng-click=clicker($index)> {{ b }} </div>
+		</div>
+
+		<div id = "buttondiv">
+			<button x-ng-click="reset()">Play again</button>
+			<!-- <button x-ng-click="board = initial">Reset to initial value</button> -->
+		</div>
+
+		<div id="scoreboard">
+			<ul>
+				<li>{{game.counterX}}</li>
+				<li> // </li>
+				<li>{{game.counterO}}</li>
+			</ul>
+		</div>
+	</div>	
+</body>
+</html>

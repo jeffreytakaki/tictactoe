@@ -1,0 +1,168 @@
+body {
+  background: -webkit-linear-gradient(#0b61a4, #acd5f2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0b61a4, #acd5f2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0b61a4, #acd5f2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0b61a4, #acd5f2); /* Standard syntax */
+  margin: 0 auto;
+}
+
+.cells {
+  font-family: 'Roboto', 'sans-serif';
+	width: 150px;
+	height: 150px;
+	background-color: #c6c8c9;
+  font-size: 90px;
+	float: left;
+	color: white;
+	border-radius: 25%;
+	margin: 5px;
+	text-align: center;
+	line-height: 150px;
+	-webkit-animation: bounceInDown 1s ease-in;
+ 	 animation: bounceInDown 1s ease-in;
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#cellsContainer {
+	width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#buttondiv {
+  width: 100px;
+  height: 120px;
+}
+
+.clickChangeX {
+	background-color:rgba(73,74,74,0);
+}
+
+.clickChangeO {
+	background-color:rgba(73,74,74,0);
+}	
+
+h1 {
+font-family: 'Roboto', 'sans-serif';
+text-align: center;
+font-size: 90px;
+margin-top: 15px;
+color: white;
+}
+
+button {
+  width: 80px;
+  height: 60px;
+  margin: 25px;
+
+}
+
+#scoreboard {
+  width: 300px;
+  height: 200px;
+  margin: -25px auto;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 80px;
+  padding: 0 30px 0 0;
+  color: white;
+}
+
+@media only screen 
+and (max-width : 320px) {
+
+  body {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .cells {
+    width: 75px;
+    height: 75px;
+    background-color: #c6c8c9;
+    /*border: 2px solid white;*/
+    float: left;
+    font-size: 45px;
+    color: white;
+    border-radius: 25%;
+    margin: 5px;
+    text-align: center;
+    line-height: 75px;
+    -webkit-animation: bounceInDown 1s ease-in;
+     animation: bounceInDown 1s ease-in;
+  }
+
+   h1 {
+    font-size: 30px;
+    color: white;
+  }
+
+  #cellsContainer {
+    width: 255px;
+    height: 163px;
+  }
+
+  .wrapper {
+    width: 255px;
+    margin: 50px auto;
+  }
+
+  ul li {
+    font-size: 45px;
+  }
+
+  button {
+    height: 30px;
+    width: 100px;
+  }
+
+  #scoreboard {
+  width: 280px;
+  height: 200px;
+  margin-top: 50px;
+  /*margin: -25px auto;*/
+}
+
+.clickChangeX {
+  background-color:rgba(73,74,74,0);
+}
+
+.clickChangeO {
+  background-color:rgba(73,74,74,0);
+} 
+
+} /*end of media query*/
+
+/*.scoreX {
+  height: 75px;
+  width: 75px;
+  float:left;
+  background-color:rgba(73,74,74,0);
+  font-size: 60px;
+  margin-left: 30px;
+  color: white; 
+}
+
+.scoreO {
+  height: 75px;
+  width: 75px;
+  float:right;
+  background-color:rgba(73,74,74,0);
+  font-size: 60px;
+  color: white;
+  
+}*/
+
+/*.displayArea {
+  height: 200px;
+  width: 25%;
+  margin: 0 auto;
+  background-color: rgba(0,0,0,0);
+
+}*/
