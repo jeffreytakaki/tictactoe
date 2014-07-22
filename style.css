@@ -110,7 +110,12 @@ and (max-width : 320px) {
 
   .wrapper {
     width: 255px;
-    margin: 50px auto;
+    margin: 25px auto;
+  }
+
+  #buttondiv {
+    width: 100px;
+    height: 105px;
   }
 
   ul li {
